@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
 
 app.post('/sms', (req, res) => {
   const twiml = new MessagingResponse();
-  twiml.message('Thanks for texting FixLaptop.com! We’ll reply shortly.');
+  twiml.message("Thanks for texting FixLaptop.com! We’ll reply shortly.");
 
   res.type('text/xml');
   res.send(twiml.toString());
